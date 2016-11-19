@@ -10,3 +10,5 @@ A branch is a resource that makes it possible to work in a file in parallel with
 It records the changes that you added to the repository. A good commit message means that anyone could understand what kind of changes were made. 
 * What is a merge conflict?
 Is when two or more people edit the same file, line, etc. The git can´t know which one is the correct, so it will mark the point as having a conflict.
+
+*I´m doing this change for Release 2: Tag your teacher
