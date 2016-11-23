@@ -8,13 +8,14 @@
 <fieldset>
 <form action="success.html">
 <section>
-<label>Whats your name?&nbsp<input type="text" name="studentname"></label>
+<label>Whats your name?&nbsp<input type="text" name="studentname" value="Name"></label>
+<input type="reset" value="Reset">
 </section>
 </fieldset>
 </br>
 <fieldset>
 <section>
-<label>What is your cohort? &nbsp<select name="course" form="cohort" label="teste"></label>
+<label>What is your cohort? &nbsp<select name="course" form="cohort" label="teste" value="Cohort"></label>
   <option value="Fireflies">Fireflies</option>
   <option value="Chipmunks">Chipmunks</option>
   <option value="Notsure">Not Sure</option>
@@ -23,12 +24,15 @@
 </fieldset>
 </br>
 <fieldset>
-<label>Whats your age? &nbsp<input type="number" name="age" value="1"/></label>
+<label>Whats your age? &nbsp<input type="number" name="age" value="0"/></label>
 </fieldset>
 </br>
 <fieldset>
+	<section>
 <label>Leave your suggestions here:</br>
-	<textarea name="text" rows="10" cols="82"></textarea></label>
+	<textarea name="text" rows="10" cols="82"></textarea></label></br>
+	<input type="reset" value="Clean">
+	</section>
 </fieldset>
 </br>
 <input type="submit">
@@ -36,7 +40,8 @@
 </form>
 <footer>
   <p>Web Developer: Mauricio Ribeiro</p>
-  <p><a href="https://devbootcamp.com/">Devbootcamp.com</a></p>
+  <p>Visit the website:&nbsp<a href="https://devbootcamp.com/">Devbootcamp.com</a></p>
 </footer>
 </body>
 </html>
+
