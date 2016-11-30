@@ -1,0 +1,36 @@
+#contact-info {
+  margin: 30px;
+  left: 140px;
+  max-width: 960px;
+  line-height: .3em;
+}
+
+
+.job {
+	background-color: #e9e5dc;
+	border-radius: 20px;
+	padding: 5px;
+	margin-top: 1px;
+}
+
+
+
+
+
+
+
+/* 
+What does the "Cascading" part of Cascading Style Sheets mean? When there is a conflict between two CSS rules that select the same element, how does your browser decide which rule to use?
+The information is arranged like box one inside of each other and respecting a hierarchical sequence. In a conflict it goes from the first to the last stylesheet reference;
+
+
+Find a cheat sheet or quick guide on CSS selectors, or refer to a cheat sheet you've already bookmarked. What is a pseudoselector? Write a CSS rule that uses a pseudoselector.
+https://css-tricks.com/pseudo-class-selectors/
+They are special commands that look like selectors, but with : before them. :hover (this one does a special action that you define when the user hover the mouse);
+
+
+How can you use CSS to select the child element of another element (for instance, a section inside another section, or an li inside a ul but not inside an ol)? Add an example of such a rule in your CSS.
+
+We can use classes or Ids. Some good examples are for the unordered list inside the volunteer-experience Id. We can use "#volunteer-experience ul" to chance just this ul instead of all "ul" in the index.html. Another one is the list that I gave a class called "bulletpoints". I could manage just that item by saying " li.bulletpoints"
+
+*/
