@@ -1,0 +1,34 @@
+
+RELEASE 0
+- Which floor?
+    - Ask to the user
+    - Get in a prompt and set as a variable and use as an input for the robot
+- Move inside elevator
+    - Start point = 0
+    - Start point = false
+- Which floor the robot wants to go?
+    - Ask for the floor (input)
+    - Elevator button == "input"?
+          if yes press
+          if not keep looking
+- Move outside elevator
+    - Input = true
+    - Until == "input"
+- If elevator stops
+    - check the booleans
+        - if false
+            - while time < 60segs
+            - after while press the emergency button
+
+RELEASE 1
+Algorithm to cook an egg
+* Assuming we already have the itens at home:
+
+- First you break the egg in a bowl to see if they´re a good 
+    - If not, trhow it away in the trash;
+    - Get another egg (loop until);
+- Heat a little bit of water in the frying pan;
+    - Until 80 celsius degrees;
+- When its warm enough put the egg inside the frying pan;
+    - While not fried dont stop;
+- When the egg get fried serve in a dish;
