@@ -38,7 +38,6 @@ library[:sections].map do |books|
        p books
 end
 
-
 # how to add a new information to the database
 p library[:sections][:authors][:names].push("Batman")
 
@@ -50,9 +49,6 @@ library[:prices].each do |book, price|
   p book, price
 end
 
-# command to know how much you're gonna pay if buy to books 
+# command to know how much you're gonna pay if buy two books 
 library[:prices][:Peter_Pan] + library[:prices][:Alice]
-
-
-
 
