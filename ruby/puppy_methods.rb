@@ -65,3 +65,6 @@ end
 end
 
 iterate_instance(new_player)
+
+
+end
