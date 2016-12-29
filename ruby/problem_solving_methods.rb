@@ -16,3 +16,17 @@ search(array_of_integers, 24)
 
 
 
+#arr.length = arr(100)
+
+#sum the last to elements
+
+# add the new number into the arr
+
+arr = [0, 1, 1, 2, 3, 5]
+
+sum = arr[-2] + arr[-1]
+
+arr << sum 
+
+p arr
+
