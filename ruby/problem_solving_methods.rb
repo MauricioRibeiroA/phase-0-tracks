@@ -28,8 +28,8 @@ new = fibonacci(100)
 p new
 
 =begin
-#I need to limit the loop with the same size of the array. I can use .length -1 for that.
-#The loop should take turns among the numbers, always considering the main "x" and the one after "x+1". 
+#I need to limit the loop with the same size of the array. I can use ".length -1" for that.
+#The loop should take turns among the numbers (try to use iterate), always considering the main "x" and the one after "x+1". 
 #Check a condition of true or false. If true change the main number with the one after and keep doing this until condition false. When false don't finish, but take the next number and do the same until condition false.
 #Iterate + loop will give me the condition to check each number until all "x" are in the right place.
 =end
