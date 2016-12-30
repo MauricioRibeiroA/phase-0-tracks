@@ -1,3 +1,4 @@
+=begin 
 module Shout
   # we'll put some methods here soon, but this code is fine for now!
   def self.yell_angrily(words)
@@ -12,16 +13,28 @@ end
 Shout.yell_angrily("I'm hungry")
 
 Shout.yelling_happily("Hi")
-#------------------------------------
+=end 
 
-module Flight
-  def take_off(altitude)
-    puts "Taking off and ascending until reaching #{altitude} ..."
-  end
-end
+
+module Shout
+
+	def yell_angrily(words)
+		p words + "!!!" + " :("
+	end
 
 class Bird
+	include Shout
 end
 
-class Plane
+class Parrot
+	include Shout
 end
+
+bird = Bird.new
+bird.yell_angrily("i'm singing in the rain!")
+
+parrot = Parrot.new
+parrot.yell_angrily("give me food!")
+
+end
+
