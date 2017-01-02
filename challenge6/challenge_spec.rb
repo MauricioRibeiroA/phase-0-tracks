@@ -10,13 +10,13 @@ require_relative "challenge.rb"
               end
           end
       end
-    describe "#get_placeholder(try_word)" do
+    describe "#current_state(try_word)" do
       it "stores the current word" do 
         try_word = " "
         game = Game.new(try_word)
-        expect(game.get_placeholder(try_word)).to eq(" ")
+        expect(game.current_state(try_word)).to eq(" ")
+        end
       end
-    end
 
 
   end
