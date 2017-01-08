@@ -1,0 +1,40 @@
+
+
+@media screen and (max-width: 500px) {
+   #external-links {
+   
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+    img {
+   	position: absolute;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   body {
+   
+    margin: auto;
+  }
+}
+
+@mobile-first
+
+
+/*How can you center the content of the entire page instead of having it sit to the left? Try it in the responsive-css site if you figure it out in time.
+Using the margin: auto;
+
+
+What is mobile-first design?
+
+It´s when you start developing the site for the mobiles device.
+
+
+
+What is the float property in CSS? What are the pros and cons of using the float property instead of the display property?
+It´s when you set an element to be floating in a container and inline elements and text will surround him. 
+Pros: You can keep a text close to an image reference. 
+Cons: Can increase your page load time. */
