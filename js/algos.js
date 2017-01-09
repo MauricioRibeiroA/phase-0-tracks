@@ -1,24 +1,4 @@
 
-
-function longestUserInput(parameter) {
-    var str = parameter.split(" ");
-    var longest = 0;
-    var Output = {};
-    for (var i = 0; i <= str.length - 1; i++) {
-        if (longest < str[i].length) {
-            longest = str[i].length;
-            Output = str[i];
-        }
-    }
-    return Output;
-}
-
-console.log(longestUserInput("My name is mauricio ribeiro"))
-console.log(longestUserInput("Dev Bootcamp Challenge"))
-console.log(longestUserInput("Find the Longest Phrase"))
-
-
-//----------------------------------------------------------------------------------
 var userInput1 = {name: "Steven", age: 54};
 var userInput2 = {name: "Tamir", age: 54};
 
@@ -44,11 +24,9 @@ if(trigger)
 else
     console.log("False");
 //---------------------------------------------------------------------------------
-var str = "qwertyuiopasdfghjklzxcvbnm";
-var newWord = []
-
 //posso usar um loop de x vezes e ir cada hora puxando uma letra diferente, depois eu junto as letras e tenho uma palavra
-function myFunction() {
+function myFunction(str) {
+  var newWord = [];
   var turns = Math.random()*10;
   for (var i = 0; i <= turns-1; i++) {
          var res = str.charAt(Math.random()*str.length);
@@ -56,5 +34,38 @@ function myFunction() {
               return newWord
 }
 
-console.log(myFunction());
+function longestUserInput(parameter) {
+    var longest = 0;
+    var output = {};
+    for (var i = 0; i <= parameter.length - 1; i++) {
+        if (longest < parameter[i].length) {
+            longest = parameter[i].length;
+            output = parameter[i];
+        }
+    }
+    return output;
+    
+}
+//-------------------------------------------
+var str = "qwertyuiopasdfghjklzxcvbnm";
+var words = []
+//-------------------------------------------
+
+var t = 0
+while (t <= 10) {
+words.push(myFunction(str).join(" and "));
+console.log(myFunction(str))
+t++;
+}
+
+console.log(longestUserInput("My name is mauricio ribeiro"))
+console.log(longestUserInput("Dev Bootcamp Challenge"))
+console.log(longestUserInput("Find the Longest Phrase"))
+console.log(longestUserInput(words))
+
+
+//function function_one() {
+//  function_two(); 
+//}
+
 
