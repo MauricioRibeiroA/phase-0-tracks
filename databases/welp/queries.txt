@@ -1,0 +1,15 @@
+1.In the welp directory, create a file called queries.txt. Once you've figured out the queries below, paste them into queries.txt, along with the output from your database.
+sqlite> CREATE TABLE reviews (
+   ...> id INTEGER PRIMARY KEY,
+   ...> stars INT,
+   ...> comment VARCHAR(255),
+   ...> business_id INT,
+   ...> user_id INT,
+   ...> FOREIGN KEY (business_id) REFERENCES businesses(id)
+   ...> FOREIGN KEY (user_id) REFERENCES users(id)
+   ...> );
+sqlite> INSERT INTO reviews (stars, comment, business_id, user_id) VALUES (5, "Great food!", 1, 1);
+
+OUTPUT=
+1|5|Great food!|1|1
+
