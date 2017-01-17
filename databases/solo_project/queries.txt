@@ -1,0 +1,31 @@
+Run a SQL query for each of the following:
+
+1.Display the information in one table (either table is fine).
+sqlite> SELECT * FROM cars;
+OUTPUT=
+1|Cadillac|2016|true|1
+2|BMW|2010|false|2
+3|Mercedes-Benz|2014|true|3
+
+2.Update an item that meets some condition (you can choose a condition that makes sense).
+sqlite> UPDATE rabbits SET age=4 WHERE name="Queen Bey";
+OUTPUT=
+2|BMW|2010|true|2
+
+3.Display the information in both tables using one query.
+sqlite> SELECT * FROM cars, colors WHERE cars.color_id = colors.id;
+OUTUPUT=
+1|Cadillac|2016|true|1|1|blue
+2|BMW|2010|true|2|2|green
+3|Mercedes-Benz|2014|true|3|3|white
+
+4.Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+sqlite> SELECT cars.name, colors.name FROM cars JOIN colors ON cars.color_id = colors.id;
+OUTPUT=
+Cadillac|blue
+BMW|green
+Mercedes-Benz|white
+
+5.Delete an item that meets some condition (you can choose a condition that makes sense)
+
+
