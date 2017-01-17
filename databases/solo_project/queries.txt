@@ -1,3 +1,4 @@
+RELEASE 2
 Run a SQL query for each of the following:
 
 1.Display the information in one table (either table is fine).
@@ -31,6 +32,25 @@ sqlite> DELETE FROM cars
    ...> WHERE year<2016;
 OUTPUT=
 1|Cadillac|2016|true|1
+
+RELEASE 3
+1.There are lots of different kinds of joins. What are they? Can you apply different conditions to a join to change what's displayed? Can you bookmark any good diagrams that will help you tell different joins apart in the future?
+Try a few different joins in your database, and record the commands and the output in queries.txt.
+
+sqlite> SELECT cars.name, colors.name
+   ...> FROM cars as cars
+   ...> LEFT JOIN colors as colors
+   ...> on cars.name = colors.name
+   ...> ;
+OUTPUT=
+Cadillac|
+
+sqlite> SELECT cars.color_id, colors.name
+   ...> FROM cars as cars
+   ...> RIGHT JOIN colors as colors
+   ...> on cars.color_id = colors.name;
+OUTPUT=
+Error: RIGHT and FULL OUTER JOINs are not currently supported
 
 
 
