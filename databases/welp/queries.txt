@@ -13,3 +13,35 @@ sqlite> INSERT INTO reviews (stars, comment, business_id, user_id) VALUES (5, "G
 OUTPUT=
 1|5|Great food!|1|1
 
+--------------------------------------------------------------------------------
+2. You've joined two tables before. How do you join three?
+
+We can join three tables by repeating the INNER JOIN command.
+sqlite> SELECT *
+   ...> FROM users as us INNER JOIN reviews as re
+   ...> ON us.id = re.id
+   ...> INNER JOIN businesses bus
+   ...> ON re.id
+   ...> ;
+1|Bradford|Pitt|1|5|Great food!|1|1|1|Lotus Yoga
+1|Bradford|Pitt|1|5|Great food!|1|1|2|Amir's Towing
+1|Bradford|Pitt|1|5|Great food!|1|1|3|Sushi World
+1|Bradford|Pitt|1|5|Great food!|1|1|4|The Beatle Nightclub
+----------------------------------------------------------------------------------
+3. There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+sqlite> SELECT name, stars, comment
+   ...> FROM users as us INNER JOIN reviews as re
+   ...> ON us.id = re.id
+   ...> ;
+Bradford|5|Great food!
+
+sqlite> SELECT stars, comment, bus.id, bus.name
+   ...> FROM users as us INNER JOIN reviews as re
+   ...> ON us.id = re.id
+   ...> INNER JOIN businesses bus
+   ...> ON re.id = bus.id
+   ...> ;
+5|Great food!|1|Lotus Yoga
+
+
+
