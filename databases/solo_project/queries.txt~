@@ -30,8 +30,6 @@ Mercedes-Benz|white
 sqlite> DELETE FROM cars
    ...> WHERE year<2016;
 OUTPUT=
-1|Cadillac|2016|true|1
-
 
 
 
