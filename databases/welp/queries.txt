@@ -42,6 +42,15 @@ sqlite> SELECT stars, comment, bus.id, bus.name
    ...> ON re.id = bus.id
    ...> ;
 5|Great food!|1|Lotus Yoga
+----------------------------------------------------------------------------------
+4. sqlite> SELECT stars, comment, bus.id=1, bus.name
+   ...> FROM users as us INNER JOIN reviews as re
+   ...> ON us.id = re.id
+   ...> INNER JOIN businesses bus
+   ...> ON re.id = bus.id
+   ...> ;
+5|Great food!|1|Lotus Yoga
+
 
 
 
