@@ -2,14 +2,33 @@
 require 'sinatra'
 require 'sqlite3'
 
-db = SQLite3::Database.new("students.db")
-db.results_as_hash = true
+#db = SQLite3::Database.new("students.db")
+#db.results_as_hash = true
 
 # write a basic GET route
 # add a query parameter
 # GET /
+get "/:number_1/add/:number_2" do
+    "#{params[:number_1].to_i + params[:number_2].to_i}"
+end
+
+=begin
 get '/' do
-  "#{params[:name]} is #{params[:age]} years old."
+  "Hello world, the address of dbc is wall street 48th"
+end
+
+get '/' do
+  name = params[:name]
+  if name
+  "Good job! #{name}"
+  else
+  "Good job!"
+end
+end
+
+get '/about/:person' do
+  person = params[:person]
+  "#{person} is a programmer, and #{person} is learning Sinatra."
 end
 
 # write a GET route with
@@ -44,3 +63,4 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+=end
